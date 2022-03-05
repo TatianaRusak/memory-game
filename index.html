@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Memory game</title>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="text">
+                <div class="text-container">
+                    <h1 class="title">Try this dessert</h1>
+                    <div class="subtitle">Your steps:  <span id="steps"></span></div>
+                    <hr>
+                    <div class="subtitle">Last score:</div>
+                    <div class="score-list"></div>
+                </div>
+                
+                <div class="btn-container">
+                    <button class="btn btn-easy">Easy</button>
+                    <button class="btn btn-hard">Hard</button>
+                </div>
+
+            </div>
+            
+
+            <section class="memory-game">
+                <div class="memory-card visible" data-framework="dessert_1">
+                    <img class="front-face" src="assets/dessert_1.png" alt="dessert_1">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>
+                <div class="memory-card visible" data-framework="dessert_1">
+                    <img class="front-face" src="assets/dessert_1.png" alt="dessert_1">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>
+                <div class="memory-card visible" data-framework="dessert_2">
+                    <img class="front-face" src="assets/dessert_2.png" alt="dessert_2">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card visible" data-framework="dessert_2">
+                    <img class="front-face" src="assets/dessert_2.png" alt="dessert_2">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card visible" data-framework="dessert_3">
+                    <img class="front-face" src="assets/dessert_3.png" alt="dessert_3">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card visible" data-framework="dessert_3">
+                    <img class="front-face" src="assets/dessert_3.png" alt="dessert_3">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card visible" data-framework="dessert_4">
+                    <img class="front-face" src="assets/dessert_4.png" alt="dessert_4">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card visible" data-framework="dessert_4">
+                    <img class="front-face" src="assets/dessert_4.png" alt="dessert_4">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card visible" data-framework="dessert_5">
+                    <img class="front-face" src="assets/dessert_5.png" alt="dessert_5">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card visible" data-framework="dessert_5">
+                    <img class="front-face" src="assets/dessert_5.png" alt="dessert_5">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card visible" data-framework="dessert_6">
+                    <img class="front-face" src="assets/dessert_6.png" alt="dessert_6">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card visible" data-framework="dessert_6">
+                    <img class="front-face" src="assets/dessert_6.png" alt="dessert_6">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>
+                <div class="memory-card hidden" data-framework="dessert_7">
+                    <img class="front-face" src="assets/dessert_7.png" alt="dessert_7">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>
+                <div class="memory-card hidden" data-framework="dessert_7">
+                    <img class="front-face" src="assets/dessert_7.png" alt="dessert_7">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>
+                <div class="memory-card hidden" data-framework="dessert_8">
+                    <img class="front-face" src="assets/dessert_8.png" alt="dessert_8">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card hidden" data-framework="dessert_8">
+                    <img class="front-face" src="assets/dessert_8.png" alt="dessert_8">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card hidden" data-framework="dessert_9">
+                    <img class="front-face" src="assets/dessert_9.png" alt="dessert_9">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card hidden" data-framework="dessert_9">
+                    <img class="front-face" src="assets/dessert_9.png" alt="dessert_9">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card hidden" data-framework="dessert_10">
+                    <img class="front-face" src="assets/dessert_10.png" alt="dessert_10">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card hidden" data-framework="dessert_10">
+                    <img class="front-face" src="assets/dessert_10.png" alt="dessert_10">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card hidden" data-framework="dessert_11">
+                    <img class="front-face" src="assets/dessert_11.png" alt="dessert_11">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card hidden" data-framework="dessert_11">
+                    <img class="front-face" src="assets/dessert_11.png" alt="dessert_11">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card hidden" data-framework="dessert_12">
+                    <img class="front-face" src="assets/dessert_12.png" alt="dessert_12">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>        
+                <div class="memory-card hidden" data-framework="dessert_12">
+                    <img class="front-face" src="assets/dessert_12.png" alt="dessert_12">
+                    <img class="back-face"src="assets/back-face.jpg" alt="Back-face">
+                </div>
+                
+            </section>
+
+        </main>
+        
+        <footer>
+            <div class="github"><a href="https://github.com/tatianarusak" class="github-link"><img src="assets/github-logo.png" alt="github-logo"></a></img></div>
+            <span class="year">2022</span>
+            <div class="rs-school"><a href="https://rs.school/js/" class="rs-school-link"><img src="assets/rs_school.svg" alt="rs_school logo"></a></img></div>
+        </footer>
+    </div>
+    
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

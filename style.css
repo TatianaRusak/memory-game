@@ -1,0 +1,371 @@
+html {
+    font-size: 10px;
+}
+
+@media (max-width: 1190px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 820px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 6.5px;
+    }
+}
+
+@media (max-width: 421px) {
+    html {
+        font-size: 6px;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Akaya Telivigala", cursive;
+}
+
+body {
+    padding: 0 100px;
+    background: teal;
+}
+
+@media (max-width: 900px) {
+    body {
+        padding: 10px 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px 30px 0;
+    }
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    gap: 6rem;
+    min-height: calc(100vh - 80px);
+}
+
+@media (max-width: 500px) {
+    main {
+        display: block;
+    }
+}
+
+/*    =============  text   ============ */
+.text {
+    flex-basis: 30%;
+}
+
+@media (max-width: 500px) {
+    .text {
+        display: flex;
+    }
+}
+
+.title {
+    padding-top: 20px;
+    margin-bottom: 5rem;
+    font-size: 5rem;
+    text-align: right;
+    color: ivory;
+}
+
+@media (max-width: 1100px) {
+    .title {
+        margin-bottom: 3.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .title {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .title {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.subtitle {
+    position: relative;
+    margin-top: 20px;
+    font-size: 3.5rem;
+    color: sandybrown;
+}
+
+#steps {
+    color: ivory;
+}
+
+hr {
+    margin-top: 10px;
+    color: sandybrown;
+}
+
+.score-list {
+    display: flex;
+    min-height: 8rem;
+    /* padding-right: 30px; */
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-content: flex-start;
+}
+
+@media (max-width: 768px) {
+    .score-list {
+        min-height: 2rem;
+    }
+}
+
+.score {
+    text-align: right;
+    color: ivory;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+}
+
+/* ================== Button ======================== */
+
+.btn-container {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .btn-container {
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+.btn {
+    display: inline;
+    width: 45%;
+    margin-right: 1rem;
+    align-items: center;
+    background-color: initial;
+    background-image: linear-gradient(rgba(244, 165, 96, 1), rgba(124, 51, 26, 1) 50%);
+    border-radius: 20px;
+    border-width: 0;
+    box-shadow: 0 2px 2px rgba(244, 165, 96, 1);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+}
+
+.btn:hover {
+    background-image: linear-gradient(ivory, rgba(244, 165, 96, 1) 80%);
+    box-shadow: 0 2px 2px rgba(124, 51, 26, 1);
+    color: rgb(0, 85, 85);
+}
+
+.btn:active {
+    /* box-shadow: inset 0 0 10px rgba(0, 85, 85, 0.9); */
+    background-image: linear-gradient(rgba(244, 165, 96, 1), rgba(124, 51, 26, 1) 50%);
+    color: ivory;
+}
+
+/* ========================================== */
+
+.memory-game {
+    display: flex;
+    flex-basis: 50%;
+    /* min-height: 300px; */
+    justify-content: space-between;
+    align-content: flex-start;
+    margin: 20px auto 10px;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+@media (max-width: 500px) {
+    .memory-game {
+        width: 70%;
+    }
+}
+
+.memory-game.width-75 {
+    flex-basis: 80%;
+    width: 100%;
+    /* min-height: 650px; */
+}
+
+.memory-card {
+    display: none;
+    /* flex-basis: 20%; */
+    position: relative;
+    width: 11rem;
+    height: 11rem;
+    margin: 1.1rem;
+    border-radius: 10px;
+    box-shadow: 3px 6px 3px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+@media (max-width: 1350px) {
+    .memory-card {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 1270px) {
+    .memory-card {
+        width: 9rem;
+        height: 9rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .memory-card {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+@media (max-width: 1050px) {
+    .memory-card {
+        margin: 1.2rem;
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .memory-card {
+        width: 9rem;
+        height: 9rem;
+    }
+}
+
+@media (max-width: 710px) {
+    .memory-card {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .memory-card {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .memory-card {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .memory-card {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+.memory-card:active {
+    transform: scale(0.95);
+    transition: transform 0.2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.memory-card.win .front-face {
+    box-shadow: 0px 0px 16px 6px rgba(115, 10, 25, 0.7) inset;
+}
+
+.front-face,
+.back-face {
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.6s;
+    /* backface-visibility: hidden; */
+}
+
+.front-face {
+    background-color: ivory;
+}
+.back-face {
+    backface-visibility: hidden;
+}
+
+.always-visible {
+    display: block;
+}
+
+.visible {
+    display: block;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 300px;
+    margin: 2rem auto 1rem;
+}
+
+.github img {
+    height: 40px;
+    width: auto;
+}
+
+.year {
+    font-family: "Akaya Telivigala", cursive;
+    font-size: 35px;
+    color: ivory;
+}
+
+.rs-school img {
+    height: 40px;
+    width: auto;
+}
